@@ -5,7 +5,7 @@ const lolService = axios.create({
     baseURL: BASE_URL
 })
 
-function getLOLData(endpoint, searchParameter) {
+function lolService(endpoint, searchParameter) {
     const url = `${endpoint}/${searchParameter}?api_key=${API_KEY}`;
     return lolService.get(url)
 }
